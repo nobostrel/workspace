@@ -1,0 +1,9 @@
+.main {
+  width  : 80%;
+  margin : 10px 10% 0 10%;
+}
+
+.main-flexArticles {
+  display   : flex;
+  flex-wrap : wrap;
+}

@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower');
+@import url('https://fonts.googleapis.com/css?family=Indie+Flower|Noto+Serif');
+
+.articleText-block {
+  display        : flex;
+  width          : 100%;
+  flex-direction : column;
+}
+
+.articleText-caption {
+  align-self  : center;
+  font-family : 'Libre Baskerville', serif;
+  font-size   : 25px;
+  font-weight : bold;
+}
+
+.articleText-text {
+  padding     : 20px;
+  text-align  : center;
+  font-family : 'Indie Flower', cursive;
+  font-family : 'Noto Serif', serif;
+  font-size   : 20px;
+}
+
+.articleText-button {
+  margin      : 10px;
+  border      : 0;
+  background  : white;
+  outline     : none;
+  box-shadow  : none;
+  align-self  : center;
+  font-family : 'Vollkorn', serif;
+  font-size   : 18px;
+  cursor      : pointer;
+}
+
+.articleText-button:hover {
+  color : darkkhaki;
+}
+
+.articleText-button-addComment {
+  margin      : 10px;
+  border      : 0;
+  background  : white;
+  outline     : none;
+  box-shadow  : none;
+  align-self  : center;
+  font-family : 'Vollkorn', serif;
+  font-size   : 15px;
+  cursor      : pointer;
+}
+
+.articleText-button-addComment:hover {
+  color : gray;
+}

@@ -1,0 +1,83 @@
+@import url('https://fonts.googleapis.com/css?family=Libre+Baskerville');
+
+.article {
+  display        : flex;
+  position       : relative;
+  width          : 200px;
+  height         : 200px;
+  margin         : 35px;
+  border         : 1px dashed lavender;
+  box-shadow     : 0 0 0 0 rgba(0, 0, 0, 0.1);
+  flex-direction : column;
+}
+
+.article:hover {
+  background : lightcyan;
+}
+
+.articleCaption {
+  display : flex;
+  width   : 100%;
+  height  : 100%;
+}
+
+.articleDate {
+  display         : flex;
+  width           : 100%;
+  height          : 100%;
+  color           : gray;
+  align-items     : center;
+  font-size       : 15px;
+  font-weight     : bold;
+  flex-direction  : column;
+  justify-content : space-around;
+}
+
+.caption {
+  position      : absolute;
+  top           : -30px;
+  left          : 0;
+  width         : 100%;
+  color         : black;
+  overflow      : hidden;
+  overflow      : hidden;
+  text-overflow : ellipsis;
+  font-family   : 'Libre Baskerville', serif;
+  font-size     : 25px;
+  white-space   : nowrap;
+}
+
+.captionLink {
+  display         : block;
+  width           : 100%;
+  height          : 100%;
+  padding-top     : 25%;
+  color           : gray;
+  text-align      : center;
+  text-decoration : none;
+  font-family     : 'Vollkorn', serif;
+  font-size       : 20px;
+  cursor          : pointer;
+}
+
+.articleButton {
+  width         : 160px;
+  height        : 35px;
+  opacity       : 0.8;
+  border        : 0;
+  border-radius : 15px;
+  background    : aliceblue;
+  outline       : none;
+  box-shadow    : none;
+  font-family   : 'Vollkorn', serif;
+  font-size     : 17px;
+  cursor        : pointer;
+}
+
+.articleButton:hover {
+  background : rgb(80, 255, 211);
+}
+
+.captionLink:hover {
+  color : rgb(211, 128, 5);
+}

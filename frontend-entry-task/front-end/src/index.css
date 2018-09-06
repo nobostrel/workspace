@@ -1,0 +1,17 @@
+body {
+  box-sizing : border-box;
+  margin     : 0;
+  padding    : 0;
+}
+
+.goHome {
+  align-self: center;
+  text-decoration: none;
+  font-size: 20;
+  font-weight: bold;
+  color: lightblue;
+}
+
+.goHome:hover {
+  text-decoration: underline;
+}
