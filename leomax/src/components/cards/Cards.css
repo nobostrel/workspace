@@ -1,0 +1,50 @@
+.card {
+    display: block;
+    min-height: 100px;
+    min-width: 200px;
+    border: 1px dashed grey;
+    margin: 15px;
+    position: relative;
+    cursor: pointer;
+}
+
+.radio {
+    opacity: 0;
+}
+
+.img {
+    width: 100px;
+    height: 40px;
+    position: absolute;
+    top: 30px;
+    left: 50px;
+}
+
+.Cards-flex {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.selected {
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background: orange;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+}
+
+.alt-img {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}

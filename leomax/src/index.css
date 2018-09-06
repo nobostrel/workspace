@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css?family=PT+Sans:400i');
+
+.body {
+    margin: 0;
+    padding: 0;
+    font-family: 'PT Sans', sans-serif;
+}
+
+.central-block {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    margin-top: 5px;
+}
+
+.central-block-down {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.bottom-block {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 0 20px 20px 20px;
+    border-top: 1px solid lightgray;
+}
+
+.final-block {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 10%;
+    padding: 40px 40px 40px 40px;
+    background: aliceblue;
+}
+
+.final-block-text {
+    display: flex;
+    justify-content: flex-start;
+}
+
+.central-block-text {
+    display: flex;
+    width: 100%;
+    padding-left: 20px;
+}
+
+.central-block-down-text {
+    display: flex;
+    width: 100%;
+    padding-left: 20px;
+    border-top: 1px solid lightgray;
+    padding-top: 10px;
+}
+
+.bottom-block-text {
+    display: flex;
+    width: 100%;
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.final-block-bottom-text-first {
+    width: 30%;
+    margin: 30px 10% 0 0;
+}
+
+.final-block-bottom-text-second {
+    width: 30%;
+    margin-top: 30px;
+}
+
+.footer {
+    display: flex;
+    width: 100%;
+    margin: 20px 0 0 0;
+    border-top: 2px solid lightgray;
+    padding-left: 10%;
+    padding-top: 10px;
+}
+
+.href {
+    margin-left: 10px;
+    color: black;
+}
+
+.text-up {
+    display: flex;
+    width: 50%;
+    padding-left: 20px;
+}
+
+.text-bottom {
+    display: flex;
+    width: 50%;
+    padding-left: 20px;
+}
+
+.bottom-text {
+    padding-left: 35px;
+}
+
+.final-block-img {
+    width: 30px;
+    height: 30px;
+    margin: 30px 10px 0 0;
+}
+
+.hide-block {
+    display: none;
+}

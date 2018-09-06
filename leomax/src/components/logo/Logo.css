@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css?family=Pattaya');
+
+.Logo-main {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    align-items: center;
+    margin: 0;
+}
+
+.Logo-top {
+    display: flex;
+    align-items: center;
+    width: 100%;
+}
+
+.Logo-top-block {
+    display: flex;
+    width: 100%;
+    height: 5px;
+    background: orange;
+}
+
+.Logo-top-block-center {
+    font-size: 120%;
+    color: orange;
+    font-family: 'Pattaya', sans-serif;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    width: content-box;
+    height: 100%;
+    margin: 0 5px 0 5px;
+}
+
+.Logo-center {
+    display: block;
+    font-size: 2em;
+    margin: 0;
+}
+
+.Logo-bottom {
+    font-size: 80%;
+}

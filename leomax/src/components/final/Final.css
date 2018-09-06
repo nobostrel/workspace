@@ -1,0 +1,13 @@
+.inp {
+    display: inline-block;
+    margin-left: 50px;
+    width: 150px;
+    height: 50px;
+    font-size: 17px;
+    color: black;
+    background: goldenrod;
+    border-radius: 100px;
+    border: 1px solid goldenrod;
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+    cursor: pointer;
+}

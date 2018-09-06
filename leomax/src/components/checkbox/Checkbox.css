@@ -1,0 +1,36 @@
+.checkbox-block {
+    display: flex;
+    width: 100%;
+    margin-top: 5px;
+    padding-left: 10px;
+}
+
+.label {
+    display: inline-block;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.labelOff {
+    display: none;
+    cursor: pointer;
+    white-space: nowrap;
+    font-size: 17px;
+    font-weight: bold;
+}
+
+.input {
+    display: inline-block;
+    width: 17px;
+    height: 17px;
+    border-radius: 15px;
+}
+
+.inputOff {
+    display: none;
+    width: 17px;
+    height: 17px;
+    border-radius: 15px;
+}
