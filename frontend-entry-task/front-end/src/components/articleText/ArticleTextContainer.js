@@ -40,7 +40,7 @@ class ArticleTextContainer extends React.Component {
     }
   }
 
-const putStateToProps = (state) => {
+const putStateToProps = state => {
   return {
     state: state
   }

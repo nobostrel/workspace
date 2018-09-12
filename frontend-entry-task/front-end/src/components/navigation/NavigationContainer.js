@@ -15,7 +15,7 @@ class NavigationContainer extends React.Component {
       })
     } else if (event.target.id === "articleFilter") {
       filtering = this.props.state.Reducer.articles.sort((a, b) => {
-        return  a.title.toUpperCase().charCodeAt(0) - b.title.toUpperCase().charCodeAt(0)
+        return  a.title.localeCompare(b.title, ["en", "ru"]);
       })
     }
     this.props.filterArticle(filtering);
@@ -30,7 +30,7 @@ class NavigationContainer extends React.Component {
   }
 }
 
-const putStateToProps = (state) => {
+const putStateToProps = state => {
   return {
       state: state
   }

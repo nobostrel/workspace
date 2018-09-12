@@ -5,10 +5,15 @@ import {ArticleComponent} from "./Article.jsx";
 import {deleteArticle} from '../../actions/MainActions.js';
 
 class ArticleContainer extends React.Component {
-  del = (event) => {
+  del = event => {
     let refreshArticles = this.props.state.Reducer.articles.filter(item =>
       item.id !== event.target.id)
     this.props.deleteArticle(refreshArticles);
+  }
+
+  dateParser = date => {
+    let result = new Date(date);
+    return result.toLocaleString();
   }
 
   render() {
@@ -17,13 +22,13 @@ class ArticleContainer extends React.Component {
         del={this.del}
         articlePath={this.props.id}
         caption={this.props.caption}
-        date={this.props.date}
+        date={this.dateParser(this.props.date)}
       />
     )
   }
 }
 
-const putStateToProps = (state) => {
+const putStateToProps = state => {
   return {
     state: state
   }
