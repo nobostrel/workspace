@@ -1,0 +1,43 @@
+@import '../../mixins/styles';
+
+.AnimatedCircle__outerBlock {
+    @include border-radius(50%);
+    background: url('./AnimatedCircle__outer.png');
+    width: 100px;
+    height: 100px;
+}
+
+.AnimatedCircle__middleBlock {
+    @include border-radius(50%);
+}
+
+.AnimatedCircle__innerBlock {
+    @include border-radius(50%);
+}
+
+@keyframes AnimatedCircle__outerBlock {
+    0% {
+
+    }
+    100% {
+
+    }
+}
+
+@keyframes AnimatedCircle__middleBlock {
+    0% {
+
+    }
+    100% {
+
+    }
+}
+
+@keyframes AnimatedCircle__innerBlock {
+    0% {
+
+    }
+    100% {
+
+    }
+}
