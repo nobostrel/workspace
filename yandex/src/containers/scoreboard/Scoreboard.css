@@ -1,0 +1,19 @@
+.scoreboard {
+    margin: 50px;
+}
+
+.scoreboard__navigation {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.scoreboard__columnsName {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    border-bottom: 1px solid black;
+    min-height: 30px;
+}

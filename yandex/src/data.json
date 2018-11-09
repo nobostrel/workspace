@@ -1,0 +1,43 @@
+{
+    "flyIn": [
+        {
+            "date": "14.07.2018 11:10",
+            "flyghtNumber": "21314",
+            "airport": "Даллас",
+            "terminal": "B",
+            "status": "ожидается"
+        },
+        {
+            "date": "14.07.2018 13:10",
+            "flyghtNumber": "13244",
+            "airport": "Лос Анжелес",
+            "terminal": "А",
+            "status": "ожидается"
+        }
+    ],
+    "comeFly": [
+        {
+            "date": "15.07.2018 17:01",
+            "flyghtNumber": "34512",
+            "airport": "Малайзия",
+            "terminal": "B",
+            "status": "выдача багажа"
+        },
+        {
+            "date": "15.07.2018 09:40",
+            "flyghtNumber": "37564",
+            "airport": "Лондон",
+            "terminal": "А",
+            "status": "выдача багажа завершена"
+        }
+    ],
+    "delayedFlights": [
+        {
+            "date": "16.07.2018 01:20",
+            "flyghtNumber": "65244",
+            "airport": "Амстердам",
+            "terminal": "С",
+            "status": "задерживается из-за погодных условий"
+        }
+    ]
+}

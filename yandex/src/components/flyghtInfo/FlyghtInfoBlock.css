@@ -1,0 +1,10 @@
+.FlyghtInfoBlock {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: center;
+    justify-content: space-around;
+    width: auto;
+    min-height: 70px;
+    margin: 5px;
+    border-bottom: 1px solid blanchedalmond;
+}
