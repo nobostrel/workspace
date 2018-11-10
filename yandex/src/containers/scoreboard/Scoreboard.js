@@ -5,12 +5,7 @@ import {Button} from 'antd';
 import {Search} from '../../components/index';
 import {FlyghtInfoBlock} from '../../components/index';
 import data from '../../data.json';
-import {
-    flyInSetDataAction,
-    comeFlySetDataAction,
-    delayedFlightsSetDataAction,
-    searchSetDataAction
-} from '../../actions/index';
+import {SetDataAction} from '../../actions/index';
 import './Scoreboard.css';
 
 class ScoreboardContainer extends Component {
@@ -29,16 +24,16 @@ class ScoreboardContainer extends Component {
                 if (this.state.searchInputValue === item.flyghtNumber) searchDataArray.push(item);
             })
         }
-        this.props.searchSetDataAction(searchDataArray);
+        this.props.SetDataAction(searchDataArray);
     }
 
     infoHandler = event => {
         if (event.target.value === "flyIn") {
-            this.props.flyInSetDataAction(data.flyIn);
+            this.props.SetDataAction(data.flyIn);
         } else if (event.target.value === "comeFly") {
-            this.props.comeFlySetDataAction(data.comeFly);
+            this.props.SetDataAction(data.comeFly);
         } else if (event.target.value === "delayedFlight") {
-            this.props.delayedFlightsSetDataAction(data.delayedFlights);
+            this.props.SetDataAction(data.delayedFlights);
         }
     }
 
@@ -80,10 +75,7 @@ function putStateToProps(state) {
 
 function putActionToProps(dispatch) {
     return {
-        flyInSetDataAction: bindActionCreators(flyInSetDataAction, dispatch),
-        comeFlySetDataAction: bindActionCreators(comeFlySetDataAction, dispatch),
-        delayedFlightsSetDataAction: bindActionCreators(delayedFlightsSetDataAction, dispatch),
-        searchSetDataAction: bindActionCreators(searchSetDataAction, dispatch)
+        SetDataAction: bindActionCreators(SetDataAction, dispatch)
     }
 }
 

@@ -1,5 +1,4 @@
 import {combineReducers} from 'redux';
-import {routerReducer} from "react-router-redux";
 import * as consts from '../consts/index';
 
 const initialState = {
@@ -8,13 +7,7 @@ const initialState = {
 
 const Reducer = (state = initialState, action) => {
   switch (action.type) {
-    case consts.flyInSetData:
-      return {...state, data: action.payload }
-    case consts.comeFlySetData:
-      return {...state, data: action.payload }
-    case consts.delayedFlightsSetData:
-      return {...state, data: action.payload }
-    case consts.searchSetData:
+    case consts.setData:
       return {...state, data: action.payload }
 
     default:
@@ -22,4 +15,4 @@ const Reducer = (state = initialState, action) => {
     }
 };
 
-export const mainReducer = combineReducers({router: routerReducer, Reducer});
+export const mainReducer = combineReducers({Reducer});

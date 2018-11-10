@@ -1,34 +1,8 @@
-import {
-    flyInSetData,
-    comeFlySetData,
-    delayedFlightsSetData,
-    searchSetData
-} from '../consts/index';
+import {setData} from '../consts/index';
 
-export const flyInSetDataAction = value => {
+export const SetDataAction = value => {
     return {
-      type: flyInSetData,
-      payload: value
-    }
-}
-
-export const comeFlySetDataAction = value => {
-    return {
-      type: comeFlySetData,
-      payload: value
-    }
-}
-
-export const delayedFlightsSetDataAction = value => {
-    return {
-      type: delayedFlightsSetData,
-      payload: value
-    }
-}
-
-export const searchSetDataAction = value => {
-    return {
-      type: searchSetData,
+      type: setData,
       payload: value
     }
 }
