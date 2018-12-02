@@ -1,0 +1,42 @@
+.container__close {
+    position: absolute;
+    right: 0;
+    width: 3vh;
+    height: 3vh;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+
+.container__close:hover {
+    width: 4vh;
+    height: 4vh;
+}
+
+.container__copyright {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    font-size: 0.9em;
+    font-weight: bold;
+    color: white;
+    opacity: 0.6;
+}
+
+.container__hrefs {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 40%;
+    position: absolute;
+    left: 50%;
+    top: 25%;
+    transform: translateX(-50%);
+    font-size: 2.2em;
+    font-weight: bold;
+    color: white;
+}
+
+.hrefs__href:hover {
+    font-size: 1.2em;
+}

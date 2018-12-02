@@ -1,0 +1,238 @@
+.main {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
+.container {
+    position: absolute;
+    margin: 3vw;
+    width: calc(100% - 6vw);
+    height: calc(100% - 6vw);
+}
+
+.container__nikeLogo {
+    width: 9vh;
+    height: 6vh;
+}
+
+.container__upperCentralText {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    font-size: 1.3em;
+    font-weight: bold;
+    color: white;
+    opacity: 0.2;
+}
+
+.container__menu {
+    position: absolute;
+    right: 0;
+    width: 5vh;
+    height: 2vh;
+    cursor: pointer;
+    transition: all 0.5s ease;
+}
+.container__menu:hover {
+    width: 6vh;
+    height: 3vh;
+}
+
+.container__arrowUp {
+    position: absolute;
+    left: 0;
+    top: 47%;
+    width: 4vh;
+    height: 2vh;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.container__arrowDown {
+    position: absolute;
+    left: 0;
+    top: 53%;
+    width: 4vh;
+    height: 2vh;
+    transform: translateY(-50%);
+    cursor: pointer;
+}
+
+.container__leftBottomText {
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    font-size: 2.2em;
+    font-weight: bold;
+    color: white;
+}
+
+.container__leftBottomTextSecond {
+    position: absolute;
+    bottom: 0.5%;
+    left: calc(8vh + 5vw);
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+.container__centralBottomBlock {
+    position: absolute;
+    bottom: 0.5%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+
+    .centralBottomBlock__upperBlock {
+        display: flex;
+        justify-content: center;
+        margin-bottom: 2vh;
+
+        .upperBlock__text {
+            color: white;
+            font-size: 1.4em;
+            font-weight: bold;
+            letter-spacing: 0.1em;
+            opacity: 0.6;
+            transition: all 0.6s ease;
+        }
+    }
+
+    .centralBottomBlock__bottomBlock {
+        display: flex;
+        flex-wrap: nowrap;
+        justify-content: space-between;
+
+        .bottomBlock__whiteCircle{
+            width: 3vh;
+            height: 3vh;
+            cursor: pointer;
+        }
+        
+        .bottomBlock__points {
+            display: flex;
+            align-items: center;
+            margin: 0 1vw 0 1vw;
+
+            .points__point {
+                width: 4px;
+                height: 4px;
+                margin: 1vw;
+            }
+        }
+
+        .bottomBlock__blackCircle {
+            width: 3vh;
+            height: 3vh;
+            cursor: pointer;
+        }
+    }
+}
+
+.container__rightCentralText {
+    position: absolute;
+    right: -120px;
+    top: 50%;
+    transform: translateY(-50%);
+    transform: rotate(90deg);
+    color: white;
+    font-size: 1.4em;
+    font-weight: bold;
+    opacity: 0.6;
+
+    a {
+        opacity: inherit;
+    }
+
+    .rightCentralText__slash {
+        margin: 0 15px 0 15px;
+    }
+}
+
+.container__instagram {
+    position: absolute;
+    right: 14%;
+    bottom: 1%;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+.container__facebook {
+    position: absolute;
+    right: 22%;
+    bottom: 1%;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+.container__language {
+    position: absolute;
+    right: 0;
+    bottom: 1%;
+    color: white;
+    font-size: 1.2em;
+    font-weight: bold;
+    opacity: 0.6;
+}
+
+.container__centralTextBlock {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    left: 10%;
+    color: white;
+    font-weight: bolder;
+
+    .centralTextBlock__upper {
+        font-size: 2.2em;
+        opacity: 0.3;
+    }
+
+    .centralTextBlock__middle {
+        font-size: 7em;
+    }
+    
+    .centralTextBlock__bottom {
+        font-size: 1.2em;
+        letter-spacing: 0.1em;
+
+        .bottom__leftHref {
+            opacity: 0.6;
+        }
+        .bottom__leftHref:hover {
+            opacity: 1;
+        }
+
+        .bottom__verticalLine {
+            margin: 0 10px 0 10px;
+            font-weight: normal;
+            opacity: 0.6;
+        }
+
+        .bottom__rightHref {
+            opacity: 0.6;
+        }
+        .bottom__rightHref:hover {
+            opacity: 1;
+        }
+    }
+}
+
+@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
+    @import './media/Max1024';
+}
+
+@media only screen and (max-width : 767px) {
+    @import './media/Max767';
+}
