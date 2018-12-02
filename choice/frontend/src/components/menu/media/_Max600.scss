@@ -9,8 +9,8 @@
 .container__close {
     position: absolute;
     right: 0;
-    width: 40px;
-    height: 40px;
+    width: 26px;
+    height: 26px;
     cursor: pointer;
     transition: all 0.5s ease;
 }
@@ -21,9 +21,9 @@
 
 .container__copyright {
     position: absolute;
-    bottom: 10px;
+    bottom: 6px;
     left: 0;
-    font-size: 20px;
+    font-size: 10px;
     font-weight: bold;
     color: white;
     opacity: 0.6;
@@ -35,9 +35,10 @@
     align-items: center;
     justify-content: space-between;
     position: absolute;
+    top: 25%;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 96px;
+    font-size: 32px;
     font-weight: bold;
     white-space: nowrap;
     color: white;
@@ -45,28 +46,4 @@
 
 .hrefs__href:hover {
     color: burlywood;
-}
-
-@media only screen and (max-width : 1600px) {
-    @import './media/Max1600';
-}
-
-@media only screen and (max-width : 1280px) {
-    @import './media/Max1280';
-}
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    @import './media/Max1024';
-}
-
-@media only screen and (max-width : 767px) {
-    @import './media/Max767';
-}
-
-@media only screen and (max-width : 600px) {
-    @import './media/Max600';
-}
-
-@media only screen and (max-width : 440px) {
-    @import './media/Max440';
 }

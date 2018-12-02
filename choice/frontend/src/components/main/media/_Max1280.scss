@@ -9,9 +9,9 @@
 
 .container {
     position: absolute;
-    margin: 70px 120px;
-    width: calc(100% - 240px);
-    height: calc(100% - 140px);
+    margin: 50px 80px;
+    width: calc(100% - 160px);
+    height: calc(100% - 100px);
 }
 
 .container__nikeLogo {
@@ -66,7 +66,7 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    font-size: 42px;
+    font-size: 38px;
     font-weight: bold;
     color: white;
 }
@@ -74,9 +74,9 @@
 .container__leftBottomTextSecond {
     position: absolute;
     bottom: 10px;
-    left: 175px;
+    left: 145px;
     color: white;
-    font-size: 22px;
+    font-size: 18px;
     font-weight: bold;
     opacity: 0.6;
 }
@@ -109,9 +109,9 @@
         justify-content: space-between;
 
         .bottomBlock__whiteCircle{
-            width: 29px;
-            height: 29px;
-            margin-right: 33px;
+            width: 25px;
+            height: 25px;
+            margin-right: 26px;
             cursor: pointer;
         }
         
@@ -122,14 +122,14 @@
             .points__point {
                 width: 4px;
                 height: 4px;
-                margin: 8px;
+                margin: 6px;
             }
         }
 
         .bottomBlock__blackCircle {
-            width: 29px;
-            height: 29px;
-            margin-left: 33px;
+            width: 25px;
+            height: 25px;
+            margin-left: 26px;
             cursor: pointer;
         }
     }
@@ -157,20 +157,20 @@
 
 .container__instagram {
     position: absolute;
-    right: 300px;
+    right: 180px;
     bottom: 10px;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     opacity: 0.6;
 }
 
 .container__facebook {
     position: absolute;
-    right: 181px;
+    right: 81px;
     bottom: 10px;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     opacity: 0.6;
 }
@@ -180,7 +180,7 @@
     right: 0;
     bottom: 10px;
     color: white;
-    font-size: 24px;
+    font-size: 20px;
     font-weight: bold;
     opacity: 0.6;
 }
@@ -196,12 +196,12 @@
     font-weight: bolder;
 
     .centralTextBlock__upper {
-        font-size: 36px;
+        font-size: 30px;
         opacity: 0.3;
     }
 
     .centralTextBlock__middle {
-        font-size: 128px;
+        font-size: 90px;
     }
     
     .centralTextBlock__bottom {
@@ -228,28 +228,4 @@
             opacity: 1;
         }
     }
-}
-
-@media only screen and (max-width : 1600px) {
-    @import './media/Max1600';
-}
-
-@media only screen and (max-width : 1280px) {
-    @import './media/Max1280';
-}
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    @import './media/Max1024';
-}
-
-@media only screen and (max-width : 767px) {
-    @import './media/Max767';
-}
-
-@media only screen and (max-width : 600px) {
-    @import './media/Max600';
-}
-
-@media only screen and (max-width : 440px) {
-    @import './media/Max440';
 }

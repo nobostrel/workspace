@@ -60,7 +60,7 @@ export class MainContainer extends React.Component {
     }
 
     componentDidMount = () => {
-        this.inteval = setInterval(this.timer, 6000);
+        this.inteval = setInterval(this.timer, 10000);
     }
 
     componentWillUnmount = () => {

@@ -9,21 +9,21 @@
 
 .container {
     position: absolute;
-    margin: 70px 120px;
-    width: calc(100% - 240px);
-    height: calc(100% - 140px);
+    margin: 10px 16px;
+    width: calc(100% - 32px);
+    height: calc(100% - 20px);
 }
 
 .container__nikeLogo {
-    width: 133px;
-    height: 69px;
+    width: 40px;
+    height: 20px;
 }
 
 .container__upperCentralText {
     position: absolute;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 22px;
+    font-size: 8px;
     font-weight: bold;
     color: white;
     opacity: 0.2;
@@ -32,22 +32,22 @@
 .container__menu {
     position: absolute;
     right: 0;
-    width: 54px;
-    height: 15px;
+    width: 24px;
+    height: 10px;
     cursor: pointer;
     transition: all 0.5s ease;
 }
 .container__menu:hover {
-    width: 54px;
-    height: 20px;
+    width: 24px;
+    height: 14px;
 }
 
 .container__arrowUp {
     position: absolute;
     left: 0;
     top: 46%;
-    width: 28px;
-    height: 16px;
+    width: 14px;
+    height: 8px;
     transform: translateY(-50%);
     cursor: pointer;
 }
@@ -56,8 +56,8 @@
     position: absolute;
     left: 0;
     top: 54%;
-    width: 28px;
-    height: 16px;
+    width: 14px;
+    height: 8px;
     transform: translateY(-50%);
     cursor: pointer;
 }
@@ -66,24 +66,24 @@
     position: absolute;
     left: 0;
     bottom: 0;
-    font-size: 42px;
+    font-size: 12px;
     font-weight: bold;
     color: white;
 }
 
 .container__leftBottomTextSecond {
     position: absolute;
-    bottom: 10px;
-    left: 175px;
+    bottom: 2px;
+    left: 45px;
     color: white;
-    font-size: 22px;
+    font-size: 8px;
     font-weight: bold;
     opacity: 0.6;
 }
 
 .container__centralBottomBlock {
     position: absolute;
-    bottom: 10px;
+    bottom: 2px;
     left: 50%;
     transform: translateX(-50%);
     display: flex;
@@ -92,11 +92,11 @@
     .centralBottomBlock__upperBlock {
         display: flex;
         justify-content: center;
-        margin-bottom: 25px;
+        margin-bottom: 8px;
 
         .upperBlock__text {
             color: white;
-            font-size: 20px;
+            font-size: 8px;
             font-family: 'Gotham Pro Regular';
             opacity: 0.6;
             transition: all 0.6s ease;
@@ -109,9 +109,9 @@
         justify-content: space-between;
 
         .bottomBlock__whiteCircle{
-            width: 29px;
-            height: 29px;
-            margin-right: 33px;
+            width: 8px;
+            height: 8px;
+            margin-right: 4px;
             cursor: pointer;
         }
         
@@ -120,16 +120,16 @@
             align-items: center;
 
             .points__point {
-                width: 4px;
-                height: 4px;
-                margin: 8px;
+                width: 3px;
+                height: 3px;
+                margin: 1px;
             }
         }
 
         .bottomBlock__blackCircle {
-            width: 29px;
-            height: 29px;
-            margin-left: 33px;
+            width: 8px;
+            height: 8px;
+            margin-left: 4px;
             cursor: pointer;
         }
     }
@@ -137,12 +137,12 @@
 
 .container__rightCentralText {
     position: absolute;
-    right: -140px;
+    right: -60px;
     top: 50%;
     transform: translateY(-50%);
     transform: rotate(90deg);
     color: white;
-    font-size: 22px;
+    font-size: 8px;
     font-weight: bold;
     opacity: 0.6;
 
@@ -151,26 +151,26 @@
     }
 
     .rightCentralText__slash {
-        margin: 0 15px 0 15px;
+        margin: 0 8px 0 8px;
     }
 }
 
 .container__instagram {
     position: absolute;
-    right: 300px;
-    bottom: 10px;
+    right: 60px;
+    bottom: 2px;
     color: white;
-    font-size: 24px;
+    font-size: 8px;
     font-weight: bold;
     opacity: 0.6;
 }
 
 .container__facebook {
     position: absolute;
-    right: 181px;
-    bottom: 10px;
+    right: 30px;
+    bottom: 2px;
     color: white;
-    font-size: 24px;
+    font-size: 8px;
     font-weight: bold;
     opacity: 0.6;
 }
@@ -178,9 +178,9 @@
 .container__language {
     position: absolute;
     right: 0;
-    bottom: 10px;
+    bottom: 2px;
     color: white;
-    font-size: 24px;
+    font-size: 8px;
     font-weight: bold;
     opacity: 0.6;
 }
@@ -196,16 +196,16 @@
     font-weight: bolder;
 
     .centralTextBlock__upper {
-        font-size: 36px;
+        font-size: 10px;
         opacity: 0.3;
     }
 
     .centralTextBlock__middle {
-        font-size: 128px;
+        font-size: 28px;
     }
     
     .centralTextBlock__bottom {
-        font-size: 20px;
+        font-size: 8px;
         font-family: 'Gotham Pro Regular';
 
         .bottom__leftHref {
@@ -216,7 +216,7 @@
         }
 
         .bottom__verticalLine {
-            margin: 0 10px 0 10px;
+            margin: 0 6px 0 6px;
             font-weight: normal;
             opacity: 0.6;
         }
@@ -228,28 +228,4 @@
             opacity: 1;
         }
     }
-}
-
-@media only screen and (max-width : 1600px) {
-    @import './media/Max1600';
-}
-
-@media only screen and (max-width : 1280px) {
-    @import './media/Max1280';
-}
-
-@media only screen and (min-device-width : 768px) and (max-device-width : 1024px) {
-    @import './media/Max1024';
-}
-
-@media only screen and (max-width : 767px) {
-    @import './media/Max767';
-}
-
-@media only screen and (max-width : 600px) {
-    @import './media/Max600';
-}
-
-@media only screen and (max-width : 440px) {
-    @import './media/Max440';
 }

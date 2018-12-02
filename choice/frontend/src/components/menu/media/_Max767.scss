@@ -1,22 +1,29 @@
+.menu {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    background: black;
+    transition: all 0.6s ease-in-out;
+}
+
 .container__close {
     position: absolute;
     right: 0;
-    width: 3vh;
-    height: 3vh;
+    width: 30px;
+    height: 30px;
     cursor: pointer;
     transition: all 0.5s ease;
 }
 
 .container__close:hover {
-    width: 4vh;
-    height: 4vh;
+    background: red;
 }
 
 .container__copyright {
     position: absolute;
-    bottom: 0;
+    bottom: 8px;
     left: 0;
-    font-size: 0.7em;
+    font-size: 14px;
     font-weight: bold;
     color: white;
     opacity: 0.6;
@@ -27,16 +34,16 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    height: 40%;
     position: absolute;
-    left: 50%;
     top: 25%;
+    left: 50%;
     transform: translateX(-50%);
-    font-size: 1.2em;
+    font-size: 38px;
     font-weight: bold;
+    white-space: nowrap;
     color: white;
 }
 
 .hrefs__href:hover {
-    font-size: 1.2em;
+    color: burlywood;
 }
