@@ -28,3 +28,12 @@ a {
 a:hover {
   opacity: 1;
 }
+
+body:after {
+  content:
+      url(./img/background.png)
+      url(./img/pants.png)
+      url(./img/shoes.png)
+      url(./img/jacket.png);
+  display: none;
+}

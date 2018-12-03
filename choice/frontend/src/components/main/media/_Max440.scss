@@ -4,7 +4,7 @@
     height: 100vh;
     background-size: cover;
     background-repeat: no-repeat;
-    transition: all 1s step-end;
+    transition: all 1s ease-in-out;
 }
 
 .container {
@@ -98,7 +98,7 @@
             color: white;
             font-size: 8px;
             font-family: 'Gotham Pro Regular';
-            opacity: 0.6;
+            opacity: 0.7;
             transition: all 0.6s ease;
         }
     }
@@ -144,7 +144,7 @@
     color: white;
     font-size: 8px;
     font-weight: bold;
-    opacity: 0.6;
+    opacity: 0.7;
 
     a {
         opacity: inherit;
@@ -221,11 +221,8 @@
             opacity: 0.6;
         }
 
-        .bottom__rightHref {
-            opacity: 0.6;
-        }
         .bottom__rightHref:hover {
-            opacity: 1;
+            color: burlywood;
         }
     }
 }

@@ -33,12 +33,13 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    justify-content: space-between;
+    justify-content: center;
     position: absolute;
-    top: 25%;
+    top: 0;
     left: 50%;
     transform: translateX(-50%);
-    font-size: 48px;
+    height: 100%;
+    font-size: 42px;
     font-weight: bold;
     white-space: nowrap;
     color: white;

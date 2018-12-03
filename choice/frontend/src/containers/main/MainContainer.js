@@ -60,7 +60,7 @@ export class MainContainer extends React.Component {
     }
 
     componentDidMount = () => {
-        this.inteval = setInterval(this.timer, 10000);
+        this.inteval = setInterval(this.timer, 6000);
     }
 
     componentWillUnmount = () => {
@@ -90,11 +90,13 @@ export class MainContainer extends React.Component {
     }
 
     arrowsHandler = event => {
+        clearInterval(this.inteval);
         if (event.target.className === 'container__arrowUp') {
             if (this.state.page > 1 && this.state.page <= 4) this.setState({page: this.state.page - 1,backgroundImg: this.state.pages[this.state.page-2].backgroundImg});
         } else if (event.target.className === 'container__arrowDown') {
             if (this.state.page >= 1 && this.state.page < 4) this.setState({page: this.state.page + 1,backgroundImg: this.state.pages[this.state.page].backgroundImg});
         }
+        this.inteval = setInterval(this.timer, 6000);
     }
 
     langHandler = event => {
@@ -108,7 +110,6 @@ export class MainContainer extends React.Component {
                     onMenuClick={this.menuHandler}
                     animation={{
                         opacity: this.state.menuIsOpen ? "0" : "1",
-                        transform: this.state.menuIsOpen ? "rotate3d(0, 1, 0, 180deg)" : "rotate3d(0, 1, 0, 360deg)",
                         zIndex: this.state.menuIsOpen ? "0" : "1",
                         backgroundImage: this.state.backgroundImg
                     }}
